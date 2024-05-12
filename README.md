@@ -18,3 +18,14 @@
 - project structure
   - styles
   - types
+- style guild
+  - editorconfig
+  - prettier `.prettierrc .prettierignore`
+    - `pnpm add -D prettier prettier-plugin-tailwindcss`
+  - eslint `.eslintrc.json`
+    - `pnpm add -D eslint-config-prettier`
+
+## Pending
+
+- Authentication
+  - [ ] [NextAuth](https://next-auth.js.org/)
