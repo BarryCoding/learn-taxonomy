@@ -27,8 +27,12 @@
 - Shadcn UI
   - `pnpm dlx shadcn-ui@latest init`
   - default zinc variable
+- postcss
+  - autoprefixer
 
 ## Pending
 
-- [ ] Authentication with [NextAuth](https://next-auth.js.org/)
 - [ ] commitlint with husky
+- [ ] Authentication with [NextAuth](https://next-auth.js.org/)
+- [ ] env.ts type-save .env* variables
+  - [t3 env](https://env.t3.gg/docs/nextjs)
