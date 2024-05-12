@@ -7,7 +7,6 @@
   - No: src, alias
 - clean up project
 
-
 ## Learning Progress
 
 - git
@@ -27,12 +26,17 @@
 - Shadcn UI
   - `pnpm dlx shadcn-ui@latest init`
   - default zinc variable
-- postcss
-  - autoprefixer
+- postcss autoprefixer
+  - `pnpm add -D autoprefixer`
+- commit lint
+  - `pnpm add -D @commitlint/{cli,config-conventional}`
+  - `pnpm add -D husky`
+  - `pnpm husky init`
+  - `echo "pnpm dlx commitlint --edit \$1" > .husky/commit-msg`
 
 ## Pending
 
 - [ ] commitlint with husky
 - [ ] Authentication with [NextAuth](https://next-auth.js.org/)
-- [ ] env.ts type-save .env* variables
+- [ ] env.ts type-save .env\* variables
   - [t3 env](https://env.t3.gg/docs/nextjs)
