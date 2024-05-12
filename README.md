@@ -24,8 +24,11 @@
     - `pnpm add -D prettier prettier-plugin-tailwindcss`
   - eslint `.eslintrc.json`
     - `pnpm add -D eslint-config-prettier`
+- Shadcn UI
+  - `pnpm dlx shadcn-ui@latest init`
+  - default zinc variable
 
 ## Pending
 
-- Authentication
-  - [ ] [NextAuth](https://next-auth.js.org/)
+- [ ] Authentication with [NextAuth](https://next-auth.js.org/)
+- [ ] commitlint with husky
