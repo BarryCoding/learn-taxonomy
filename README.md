@@ -33,10 +33,12 @@
   - `pnpm add -D husky`
   - `pnpm husky init`
   - `echo "pnpm dlx commitlint --edit \$1" > .husky/commit-msg`
+- [Vercel Analytics](https://vercel.com/docs/analytics/quickstart)
+  - `pnpm add @vercel/analytics`
 
 ## Pending
 
-- [ ] commitlint with husky
+- [ ] deploy to Vercel and enable Analytics
 - [ ] Authentication with [NextAuth](https://next-auth.js.org/)
 - [ ] env.ts type-save .env\* variables
   - [t3 env](https://env.t3.gg/docs/nextjs)
