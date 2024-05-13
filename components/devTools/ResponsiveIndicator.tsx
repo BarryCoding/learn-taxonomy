@@ -1,7 +1,7 @@
 export const ResponsiveIndicator = () => {
   if (process.env.NODE_ENV === 'development') {
     return (
-      <div className='fixed bottom-1 left-1 z-50 flex h-24 w-24 flex-col items-center justify-center rounded-full bg-primary/20 text-primary-foreground'>
+      <div className='fixed bottom-1 left-1 z-50 flex h-24 w-24 flex-col items-center justify-center rounded-full bg-primary text-primary-foreground'>
         <p className='block sm:hidden'>xs</p>
         <p className='block sm:hidden'>&lt; 640</p>
         <p className='hidden sm:block md:hidden'>sm</p>

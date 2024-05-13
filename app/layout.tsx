@@ -1,4 +1,4 @@
-import { ThemeProvider } from '@/components/ThemeProvider'
+import { NextThemeProvider } from '@/components/NextThemeProvider'
 import { ResponsiveIndicator } from '@/components/devTools/ResponsiveIndicator'
 import { cn } from '@/lib/utils'
 import '@/styles/globals.css'
@@ -29,10 +29,15 @@ export default function RootLayout({
           fontHeading.variable,
         )}
       >
-        <ThemeProvider>
+        <NextThemeProvider
+          attribute='class'
+          defaultTheme='system'
+          enableSystem
+          disableTransitionOnChange
+        >
           {children}
           <ResponsiveIndicator />
-        </ThemeProvider>
+        </NextThemeProvider>
 
         <VercelAnalytics />
       </body>
@@ -45,4 +50,3 @@ export default function RootLayout({
 // TODO: SEO metadata
 
 // LEARN: fonts setup with css variables
-// LEARN: ThemeProvider with useContext and localStorage

@@ -8,7 +8,7 @@ import {
 } from './ui/dropdown-menu'
 import { LocalIcons } from './LocalIcons'
 import { Button } from './ui/button'
-import { useTheme } from './ThemeProvider'
+import { useTheme } from 'next-themes'
 
 export const ColorModeMenu = () => {
   const { setTheme: changeMode } = useTheme()
