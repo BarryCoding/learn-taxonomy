@@ -1,6 +1,6 @@
 import { cn } from '@/lib/utils'
 import { HTMLAttributes } from 'react'
-import { ModeMenu } from './ModeMenu'
+import { ColorModeMenu } from './ColorModeMenu'
 import { siteConfig } from '@/configs/site'
 import { LocalIcons } from './LocalIcons'
 
@@ -52,7 +52,7 @@ export const SiteFooter = ({ className }: SiteFooterProps) => {
             .
           </p>
         </div>
-        <ModeMenu />
+        <ColorModeMenu />
       </div>
     </footer>
   )
