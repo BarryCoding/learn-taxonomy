@@ -1,3 +1,4 @@
+import { ThemeProvider } from '@/components/ThemeProvider'
 import { ResponsiveIndicator } from '@/components/devTools/ResponsiveIndicator'
 import { cn } from '@/lib/utils'
 import '@/styles/globals.css'
@@ -28,8 +29,11 @@ export default function RootLayout({
           fontHeading.variable,
         )}
       >
-        {children}
-        <ResponsiveIndicator />
+        <ThemeProvider>
+          {children}
+          <ResponsiveIndicator />
+        </ThemeProvider>
+
         <VercelAnalytics />
       </body>
     </html>
@@ -37,8 +41,8 @@ export default function RootLayout({
 }
 
 // TODO: VercelAnalytics with deploy
-// TODO: dark mode: useLocalStorageState & setMode(mode)
 // TODO: Toast
 // TODO: SEO metadata
 
 // LEARN: fonts setup with css variables
+// LEARN: ThemeProvider with useContext and localStorage

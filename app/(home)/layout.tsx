@@ -1,3 +1,5 @@
+import { SiteFooter } from '@/components/SiteFooter'
+
 export default function HomeLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className='flex min-h-screen flex-col'>
@@ -6,7 +8,7 @@ export default function HomeLayout({ children }: { children: React.ReactNode }) 
         {/* TODO: login */}
       </header>
       <main className='flex-1'>{children}</main>
-      {/* TODO: footer */}
+      <SiteFooter />
     </div>
   )
 }
