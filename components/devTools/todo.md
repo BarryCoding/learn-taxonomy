@@ -1,0 +1,3 @@
+- [ ] theme panel
+- [ ] draggable panel
+- [ ] dev tools switch

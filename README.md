@@ -35,9 +35,12 @@
   - `echo "pnpm dlx commitlint --edit \$1" > .husky/commit-msg`
 - [Vercel Analytics](https://vercel.com/docs/analytics/quickstart)
   - `pnpm add @vercel/analytics`
+- next-theme `pnpm add next-themes`
+  - stop: hydration warning is disturbing!!!
 
 ## Pending
 
+- [ ] theme transition effect?
 - [ ] deploy to Vercel and enable Analytics
 - [ ] Authentication with [NextAuth](https://next-auth.js.org/)
 - [ ] env.ts type-save .env\* variables
